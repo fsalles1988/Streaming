@@ -1,6 +1,6 @@
 :root{
-    --vermelho:#E50914;
-    --preta:#141414;
+    --vermelho:#09a7e5;
+    --roxo:#5f128b;
 }
 
 /* reset css */
@@ -12,7 +12,7 @@
 
 /* Elementos base */
 body{
-    background: var(--preta);
+    background: var(--roxo);
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
@@ -35,10 +35,12 @@ header nav a{
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
+    color: var(--vermelho);
+    font-size: 18px;
 }
 
 header nav a:hover{
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 /* Filme-principal */
@@ -70,7 +72,7 @@ header nav a:hover{
 
 .botao{
     
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(69, 75, 129, 0.5);
     border:none;
     color: white;
     border-radius: 18px;
@@ -85,16 +87,30 @@ header nav a:hover{
 
 
 .botao:hover{
-    background-color: white;
-    color: black;
+    background-color: rgb(87, 167, 170);
+    color: rgb(252, 248, 248);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .botao i{
-    margin-right: 8px;
+
+    margin-right: 10px;
 }
 
 .container{
-    margin-left: 20px;
+    margin-left: 25px;
 
 }
 
+.filme-principal.container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
